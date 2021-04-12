@@ -11,3 +11,6 @@ INSTALACE:
 5. Mělo by se ukázat "Načítat přítomnost" via. screenshot: https://boofpack.cc/Bp9KVEkb
 6. Klikněte na to a najděte složku kde jste extrahovali náš rich presence.
 7. Voilá~, nyní máte RPC pro WarfareFM.
+
+
+Až se reálně k tomuhle dostanu něják to dostanu i na PreMiD presence store.
