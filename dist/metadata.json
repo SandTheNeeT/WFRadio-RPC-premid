@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.premid.app/metadata/1.3",
+  "service": "WarfareFM",
+  "author": {
+    "name": "boofi, SandTheNeet",
+    "id": "334410019774791681"
+  },
+  "category": "music",
+  "logo": "https://img.wrfmc.eu/WarfareWcropped.png",
+  "thumbnail": "https://pays.host/uploads/79bf364d-36dd-4a70-a714-9fbad3be5772/kEZa9hsb.png",
+  "version": "1.0.0",
+  "color": "#1e335e",
+  "tags": [
+    "music",
+    "radio",
+    "WarfareMC"
+  ],
+  "url": "warfaremc.torontocast.stream",
+  "description": {
+    "cz": "Rich presence pro rádio od Minecraft serveru WarfareMC.eu!",
+    "en": "Rich presence for the radio of the Minecraft server WarfareMC.eu!"
+  }
+}
