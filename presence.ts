@@ -7,22 +7,34 @@ const presence = new Presence({
     //You can use this to get translated strings in their browser language
   });
 
+  let obj;
+
 
 const now = Date.now();
 
-function myOutsideHeavyLiftingFunction(){
-
+function httpGet(theUrl) {
+  let xmlHttpReq = new XMLHttpRequest();
+  xmlHttpReq.open("GET", theUrl, false);
+  xmlHttpReq.send(null);
+  return xmlHttpReq.responseText;
 }
 
+
+function myOutsideHeavyLiftingFunction(){
+  const boofi = httpGet('https://hazel.torontocast.com:1040/api/history/?server=1&limit=1&callback=callback&format=json');
+  obj = JSON.parse(boofi);
+}
+
+
+
+
 setInterval(myOutsideHeavyLiftingFunction, 10000);
+
+
 //Run the function separate from the UpdateData event every 10 seconds to get and set the variables which UpdateData picks up
-
-
-
 presence.on("UpdateData", async () => {
-  /*UpdateData is always firing, and therefore should be used as your refresh cycle, or `tick`. This is called several times a second where possible.
 
-    It is recommended to set up another function outside of this event function which will change variable values and do the heavy lifting if you call data from an API.*/
+
 
   const presenceData: PresenceData = {
     largeImageKey:
@@ -30,9 +42,9 @@ presence.on("UpdateData", async () => {
     smallImageKey:
       "w" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageText: "Made by boofi!",  //The text which is displayed when hovering over the small image
-    details: "https://wrfmc.eu/fm",
+    details: "Currently playing: " + obj.objects [0] .metadata,
     startTimestamp: now, //The upper section of the presence text
-    state: "Rádio WarfareFM",
+    state: "Current DJ: " + obj.objects [0] .dj_name,
     buttons: [
    {
            label: "WarfareFM",
@@ -40,7 +52,7 @@ presence.on("UpdateData", async () => {
        },
        {
            label: "WarfareMC",
-           url: "https://Warfaremc.eu"
+           url: "https://warfaremc.eu"
        }
    ] //The lower section of the presence text
    //If you want to show Time Left instead of Elapsed, this is the unix epoch timestamp at which the timer ends
