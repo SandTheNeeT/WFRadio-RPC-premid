@@ -14,7 +14,9 @@ INSTALACE:
 5. Mělo by se ukázat "Načítat přítomnost" via. screenshot 
 
  ![TUT image](https://pays.host/uploads/79bf364d-36dd-4a70-a714-9fbad3be5772/Bp9KVEkb.png)
+
 6. Klikněte na to a najděte složku kde jste extrahovali náš rich presence.
+
 7. Voilá~, nyní máte RPC pro WarfareFM.
 
 
