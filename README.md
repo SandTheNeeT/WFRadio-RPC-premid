@@ -1,6 +1,9 @@
+# TENTO PROJEKT JE ON HOLD DOKUD NEBUDE PLNĚ HOTOVO WARFAREFM!
+
 # WFRadio-RPC-premid
 
-Test rich presence pro rádio WarfareFM na linku https://warfaremc.torontocast.stream/
+Test rich presence pro rádio [WarfareFM](https://www.warfaremc.torontocast.stream
+)
 
 
 INSTALACE:
