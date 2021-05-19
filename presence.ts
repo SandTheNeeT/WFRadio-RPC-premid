@@ -42,9 +42,9 @@ presence.on("UpdateData", async () => {
     smallImageKey:
       "w" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageText: "Made by boofi!",  //The text which is displayed when hovering over the small image
-    details: "Currently playing: " + obj.objects [0] .metadata,
+    details: obj.objects [0] .metadata,
     startTimestamp: now, //The upper section of the presence text
-    state: "Current DJ: " + obj.objects [0] .dj_name,
+    state: "DJ: " + obj.objects [0] .dj_name,
     buttons: [
    {
            label: "WarfareFM",
