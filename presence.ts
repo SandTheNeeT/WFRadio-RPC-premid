@@ -40,7 +40,7 @@ presence.on("UpdateData", async () => {
     largeImageKey:
       "w" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageKey:
-      "w" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
+      "boofi" /*The key (file name) of the Large Image on the presence. These are uploaded and named in the Rich Presence section of your application, called Art Assets*/,
     smallImageText: "Made by boofi!",  //The text which is displayed when hovering over the small image
     details: obj.objects [0] .metadata,
     startTimestamp: now, //The upper section of the presence text
